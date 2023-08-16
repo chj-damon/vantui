@@ -20,7 +20,7 @@ export interface CellProps extends ViewProps {
   /**
    * @description 右侧内容
    */
-  value?: string | number
+  value?: string | number | ReactNode;
   /**
    * @description 标题下方的描述信息
    */

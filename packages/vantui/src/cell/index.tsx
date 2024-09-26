@@ -87,6 +87,7 @@ export function Cell(props: CellProps) {
       <View className="van-cell__value value-class">
         {value || value === 0 ? <>{value}</> : children}
       </View>
+      <View>{renderExtra}</View>
       <View>
         {isLink ? (
           <Icon
@@ -97,7 +98,6 @@ export function Cell(props: CellProps) {
           renderRightIcon
         )}
       </View>
-      <View>{renderExtra}</View>
     </View>
   )
 }
